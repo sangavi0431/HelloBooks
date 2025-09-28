@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HelloBooks_Regression_Suite">
+    
+    <test thread-count="2" name="HelloBooks_Full_Flow_Tests">
+        <parameter name="BROWSER" value="chrome"/> <classes>
+            <class name="com.HelloBooks.LoginTests"/>
+            
+            <class name="com.HelloBooks.RegistrationTests"/>
+        </classes>
+    </test>
+    
+</suite>

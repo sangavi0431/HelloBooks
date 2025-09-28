@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-HelloBooks_Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">HelloBooks_Regression_Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span>C:\Users\ELCOT\Desktop\com.HelloBooks\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-HelloBooks_Regression_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 6 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-HelloBooks_Regression_Suite" class="hide-methods failed suite-HelloBooks_Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-HelloBooks_Regression_Suite -->
+                      <a href="#" panel-name="suite-HelloBooks_Regression_Suite" class="show-methods failed suite-HelloBooks_Regression_Suite"> (show)</a> <!-- show-methods failed suite-HelloBooks_Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-HelloBooks_Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HelloBooks_Regression_Suite" title="com.HelloBooks.RegistrationTests" class="method navigator-link" hash-for-method="verifyExistingEmailFails">verifyExistingEmailFails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HelloBooks_Regression_Suite" title="com.HelloBooks.RegistrationTests" class="method navigator-link" hash-for-method="verifyFullRegistrationAndOnboarding">verifyFullRegistrationAndOnboarding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HelloBooks_Regression_Suite" title="com.HelloBooks.LoginTests" class="method navigator-link" hash-for-method="verifyInvalidLogin">verifyInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HelloBooks_Regression_Suite" title="com.HelloBooks.RegistrationTests" class="method navigator-link" hash-for-method="verifyInvalidZipCode">verifyInvalidZipCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HelloBooks_Regression_Suite" title="com.HelloBooks.LoginTests" class="method navigator-link" hash-for-method="verifySucessfulLogin">verifySucessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-HelloBooks_Regression_Suite" title="com.HelloBooks.RegistrationTests" class="method navigator-link" hash-for-method="verifyWeakPasswordFails">verifyWeakPasswordFails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-HelloBooks_Regression_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-HelloBooks_Regression_Suite" class="panel HelloBooks_Regression_Suite">
+          <div class="suite-HelloBooks_Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.HelloBooks.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidLogin">
+                  </a> <!-- verifyInvalidLogin -->
+                  <span class="method-name">verifyInvalidLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input_your_working_email&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbdd84e4b171e8f62606b2657dd99dff, findElement {using=id, value=input_your_working_email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63446/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbdd84e4b171e8f62606b2657dd99dff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.clear(Unknown Source)
+	at com.HelloBooks.genericlibrary.SeleniumUtilities.enterText(SeleniumUtilities.java:44)
+	at objectRepository.LoginPage.login(LoginPage.java:32)
+	at com.HelloBooks.LoginTests.verifyInvalidLogin(LoginTests.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_018/019: Verify login failure with invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySucessfulLogin">
+                  </a> <!-- verifySucessfulLogin -->
+                  <span class="method-name">verifySucessfulLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.HelloBooks.LoginTests.verifySucessfulLogin(LoginTests.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_017: Verify successful login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HelloBooks_Regression_Suite-class-failed -->
+          <div class="suite-HelloBooks_Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.HelloBooks.RegistrationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExistingEmailFails">
+                  </a> <!-- verifyExistingEmailFails -->
+                  <span class="method-name">verifyExistingEmailFails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Sign up&apos;]&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbdd84e4b171e8f62606b2657dd99dff, findElement {using=xpath, value=//button[text()=&apos;Sign up&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63446/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbdd84e4b171e8f62606b2657dd99dff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.HelloBooks.genericlibrary.SeleniumUtilities.clickElement(SeleniumUtilities.java:51)
+	at objectRepository.SignupPage.filAndSubmitSignup(SignupPage.java:48)
+	at com.HelloBooks.RegistrationTests.verifyExistingEmailFails(RegistrationTests.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_003: Verify registration fails for existing email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFullRegistrationAndOnboarding">
+                  </a> <!-- verifyFullRegistrationAndOnboarding -->
+                  <span class="method-name">verifyFullRegistrationAndOnboarding</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Sign up&apos;]&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbdd84e4b171e8f62606b2657dd99dff, findElement {using=xpath, value=//button[text()=&apos;Sign up&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63446/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbdd84e4b171e8f62606b2657dd99dff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.HelloBooks.genericlibrary.SeleniumUtilities.clickElement(SeleniumUtilities.java:51)
+	at objectRepository.SignupPage.filAndSubmitSignup(SignupPage.java:48)
+	at com.HelloBooks.RegistrationTests.verifyFullRegistrationAndOnboarding(RegistrationTests.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_001, TC_008: Verify successful full user registration and OTP)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidZipCode">
+                  </a> <!-- verifyInvalidZipCode -->
+                  <span class="method-name">verifyInvalidZipCode</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#input_organization_name&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbdd84e4b171e8f62606b2657dd99dff, findElement {using=id, value=input_organization_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63446/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbdd84e4b171e8f62606b2657dd99dff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.clear(Unknown Source)
+	at com.HelloBooks.genericlibrary.SeleniumUtilities.enterText(SeleniumUtilities.java:44)
+	at objectRepository.OrganizationSetupPage.submitOrganizationDetails(OrganizationSetupPage.java:38)
+	at com.HelloBooks.RegistrationTests.verifyInvalidZipCode(RegistrationTests.java:80)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_014: Verify Invalid Zip Code Error - BUG CONFIRMATION)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWeakPasswordFails">
+                  </a> <!-- verifyWeakPasswordFails -->
+                  <span class="method-name">verifyWeakPasswordFails</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&apos;Sign up&apos;]&quot;}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.32.0&apos;, revision: &apos;d17c8aa950&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbdd84e4b171e8f62606b2657dd99dff, findElement {using=xpath, value=//button[text()=&apos;Sign up&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63446}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63446/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbdd84e4b171e8f62606b2657dd99dff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at com.HelloBooks.genericlibrary.SeleniumUtilities.clickElement(SeleniumUtilities.java:51)
+	at objectRepository.SignupPage.filAndSubmitSignup(SignupPage.java:48)
+	at com.HelloBooks.RegistrationTests.verifyWeakPasswordFails(RegistrationTests.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC_004: Verify password validation for weak password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-HelloBooks_Regression_Suite-class-failed -->
+        </div> <!-- panel HelloBooks_Regression_Suite -->
+        <div panel-name="test-xml-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ELCOT\Desktop\com.HelloBooks\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;HelloBooks_Regression_Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;HelloBooks_Full_Flow_Tests&quot;&gt;
+    &lt;parameter name=&quot;BROWSER&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.HelloBooks.LoginTests&quot;/&gt;
+      &lt;class name=&quot;com.HelloBooks.RegistrationTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HelloBooks_Full_Flow_Tests --&gt;
+&lt;/suite&gt; &lt;!-- HelloBooks_Regression_Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for HelloBooks_Regression_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">HelloBooks_Full_Flow_Tests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for HelloBooks_Regression_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for HelloBooks_Regression_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_HelloBooks_Regression_Suite');
+function tableData_HelloBooks_Regression_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySucessfulLogin')
+data.setCell(0, 2, 'com.HelloBooks.LoginTests')
+data.setCell(0, 3, 14585);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyFullRegistrationAndOnboarding')
+data.setCell(1, 2, 'com.HelloBooks.RegistrationTests')
+data.setCell(1, 3, 10141);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyInvalidLogin')
+data.setCell(2, 2, 'com.HelloBooks.LoginTests')
+data.setCell(2, 3, 10108);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyWeakPasswordFails')
+data.setCell(3, 2, 'com.HelloBooks.RegistrationTests')
+data.setCell(3, 3, 10094);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyInvalidZipCode')
+data.setCell(4, 2, 'com.HelloBooks.RegistrationTests')
+data.setCell(4, 3, 10083);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyExistingEmailFails')
+data.setCell(5, 2, 'com.HelloBooks.RegistrationTests')
+data.setCell(5, 3, 10051);
+window.suiteTableData['HelloBooks_Regression_Suite']= { tableData: data, tableDiv: 'times-div-HelloBooks_Regression_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-HelloBooks_Regression_Suite">
+              </div> <!-- times-div-HelloBooks_Regression_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for HelloBooks_Regression_Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.HelloBooks.RegistrationTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launchingBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closebrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-HelloBooks_Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.HelloBooks.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchingBrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySucessfulLogin</span>
+                <span class="method-start">36328 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyInvalidLogin</span>
+                <span class="method-start">50934 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.HelloBooks.RegistrationTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyFullRegistrationAndOnboarding</span>
+                <span class="method-start">61067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyExistingEmailFails</span>
+                <span class="method-start">71232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyWeakPasswordFails</span>
+                <span class="method-start">81299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyInvalidZipCode</span>
+                <span class="method-start">91401 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.HelloBooks.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">closebrowser</span>
+                <span class="method-start">101496 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

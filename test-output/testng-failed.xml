@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HelloBooks_Regression_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="HelloBooks_Full_Flow_Tests(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.HelloBooks.LoginTests">
+        <methods>
+          <include name="verifySucessfulLogin"/>
+          <include name="launchingBrowser"/>
+          <include name="closebrowser"/>
+          <include name="verifyInvalidLogin"/>
+        </methods>
+      </class> <!-- com.HelloBooks.LoginTests -->
+      <class name="com.HelloBooks.RegistrationTests">
+        <methods>
+          <include name="verifyInvalidZipCode"/>
+          <include name="launchingBrowser"/>
+          <include name="verifyFullRegistrationAndOnboarding"/>
+          <include name="closebrowser"/>
+          <include name="verifyWeakPasswordFails"/>
+          <include name="verifyExistingEmailFails"/>
+        </methods>
+      </class> <!-- com.HelloBooks.RegistrationTests -->
+    </classes>
+  </test> <!-- HelloBooks_Full_Flow_Tests(failed) -->
+</suite> <!-- Failed suite [HelloBooks_Regression_Suite] -->
